@@ -1,0 +1,59 @@
+﻿<Window x:Class="CSharpWpf.Views.Main.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpWpf"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:behaviors="clr-namespace:Aging.Behavior.Main"
+        mc:Ignorable="d"
+        Style="{StaticResource BASICWINDOW}">
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--#region Top Bar-->
+        <Grid Style="{StaticResource WIN.BAR}" Grid.Row="0">
+            <Label Content = "{Binding CurrentDateTimeText}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Right" FontSize="20" Background="{x:Null}" FontWeight="Bold" Foreground="White" Width="280" Height="40" Margin="0 0 150 0"/>
+            <ListView Background="Transparent">
+                <b:Interaction.Behaviors>
+                    <behaviors:WindowTopBarBehavior/>
+                </b:Interaction.Behaviors>
+            </ListView>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="_"  Command="{Binding MainMiniCommand}" Style="{StaticResource TITLEBAR.BUTTON}"  />
+                <Button Content="◱" Command="{Binding MainMaxCommand}" Style="{StaticResource TITLEBAR.BUTTON}" />
+                <Button Content="X"  Command="{Binding MainExitCommand}" Style="{StaticResource TITLEBAR.BUTTON}" />
+            </StackPanel>
+        </Grid>
+        <!-- #endregion -->
+
+        <Grid Grid.Row="1">
+            
+        </Grid>
+        <!--#endregion-->
+
+        <!--#region Menu Button -->
+        <Viewbox Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <!--<StackPanel Orientation="Horizontal"  >
+                <RadioButton Content="{local:Loc MainView-11}" Style="{StaticResource MenuBtn}" CommandParameter="MainStage" IsChecked="True"/>
+                <RadioButton Content="{local:Loc MainView-07}" Style="{StaticResource MenuBtn}" CommandParameter="Function"/>
+                <RadioButton Content="{local:Loc MainView-02}" Style="{StaticResource MenuBtn}" CommandParameter="Log"/>
+                <RadioButton Content="{local:Loc MainView-03}" Style="{StaticResource MenuBtn}" CommandParameter="Setting"/>
+            </StackPanel>-->
+        </Viewbox>
+        <!--#endregion-->
+
+        <!-- Small Sub View -->
+        <Border Grid.Row="3">
+            <Viewbox  VerticalAlignment="Top">
+                <ContentControl  Content="{Binding CurrentView}" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="{Binding MenuViewEnable}"/>
+            </Viewbox>
+        </Border>
+    </Grid>
+</Window>

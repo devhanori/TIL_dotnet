@@ -1,0 +1,12 @@
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\bin\Debug\net7.0-windows\CSharpWpf.Core.deps.json
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\bin\Debug\net7.0-windows\CSharpWpf.Core.dll
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\bin\Debug\net7.0-windows\CSharpWpf.Core.pdb
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.csproj.AssemblyReference.cache
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.AssemblyInfoInputs.cache
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.AssemblyInfo.cs
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.csproj.CoreCompileInputs.cache
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.dll
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\refint\CSharpWpf.Core.dll
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\CSharpWpf.Core.pdb
+C:\00_Workspace\TIL_dotnet\CSharpWpf.Core\obj\Debug\net7.0-windows\ref\CSharpWpf.Core.dll

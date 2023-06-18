@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "hG/0DBYTiqicwdVhhUKYwrBqNQq1AO3m8eLVsiqWN6EkmjZYzsRkU/+FqtiGRvqplbNfw+Ym7y4pPuCWvalMwQ==",
+  "success": true,
+  "projectFilePath": "C:\\00_Workspace\\TIL_dotnet\\CSharpWpf.Core\\CSharpWpf.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abyz1\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\abyz1\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\abyz1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\abyz1\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
