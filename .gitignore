@@ -4,3 +4,7 @@
 
 /CSharpWpf/.vs/CSharpWpf
 /CSharpWpf/obj
+/CSharpWpf.Core/bin/Debug/net7.0-windows
+/CSharpWpf.Core/obj
+/CSharpWpf/bin/Debug/net7.0-windows
+/CSharpWpf/.vs/ProjectEvaluation
