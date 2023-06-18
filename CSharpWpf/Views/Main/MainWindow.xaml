@@ -40,12 +40,12 @@
 
         <!--#region Menu Button -->
         <Viewbox Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">
-            <!--<StackPanel Orientation="Horizontal"  >
-                <RadioButton Content="{local:Loc MainView-11}" Style="{StaticResource MenuBtn}" CommandParameter="MainStage" IsChecked="True"/>
-                <RadioButton Content="{local:Loc MainView-07}" Style="{StaticResource MenuBtn}" CommandParameter="Function"/>
-                <RadioButton Content="{local:Loc MainView-02}" Style="{StaticResource MenuBtn}" CommandParameter="Log"/>
-                <RadioButton Content="{local:Loc MainView-03}" Style="{StaticResource MenuBtn}" CommandParameter="Setting"/>
-            </StackPanel>-->
+            <StackPanel Orientation="Horizontal"  >
+                <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="MainStage" IsChecked="True"/>
+                <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="Function"/>
+                <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="Log"/>
+                <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="Setting"/>
+            </StackPanel>
         </Viewbox>
         <!--#endregion-->
 
