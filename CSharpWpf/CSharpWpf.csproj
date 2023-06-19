@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Behaviors\" />
     <Folder Include="Styles\Main\" />
-    <Folder Include="Styles\Units\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -47,14 +47,14 @@
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
                     <Border x:Name="border"
-                            Height="50" Width="350" BorderThickness="0">
+                            Height="50" Width="200" BorderThickness="0">
                         <Border.Background>
                             <SolidColorBrush x:Name="BorderBackground" Color="White" />
                         </Border.Background>
                         <Grid>
                             <Border x:Name="Indicator"
                                     Height="40"
-                                    Width="300"
+                                    Width="180"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Background="{StaticResource MenuBtnPressed}"

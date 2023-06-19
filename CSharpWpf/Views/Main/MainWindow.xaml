@@ -39,7 +39,7 @@
         <!--#endregion-->
 
         <!--#region Menu Button -->
-        <Viewbox Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Viewbox Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
             <StackPanel Orientation="Horizontal"  >
                 <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="MainStage" IsChecked="True"/>
                 <RadioButton Content="Test" Style="{StaticResource MenuBtn}" CommandParameter="Function"/>
