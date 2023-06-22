@@ -13,5 +13,6 @@ namespace CSharpWpf.Core.ViewModels.Units
     {
         [ObservableProperty]
         public ObservableCollection<Person> people;
+
     }
 }

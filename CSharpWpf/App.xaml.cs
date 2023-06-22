@@ -21,8 +21,7 @@ namespace CSharpWpf
             var services = new ServiceCollection();
 
             services.AddSingleton<MainWindowViewModel>();
-
-
+            services.AddSingleton<PeopleService>();
 
             return services.BuildServiceProvider();
         }

@@ -17,10 +17,14 @@ namespace CSharpWpf.Core.ViewModels.Main
         private System.Threading.Timer? DateTimeTimer;
         private WindowCtrl? WinCtrl = new();
         private readonly IEnumerable<IMenuView>? MenuViews;
+        PeopleService peopleService;
         public MainWindowViewModel(
-            IEnumerable<IMenuView> _meunViews)
+            IEnumerable<IMenuView> _meunViews,
+            PeopleService _peopleService)
         {
             MenuViews = _meunViews.ToList();
+            peopleService = _peopleService;
+
             Initialize();
         }
 
