@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 namespace CSharpWpf.Core.Models
 {
     [XmlRoot]
-    public class People
+    public class PeopleXml
     {
         [XmlIgnore]
         public string path = "Config\\People.xml";
@@ -20,24 +20,24 @@ namespace CSharpWpf.Core.Models
             new Person {Name="13", Age=1},
         };
 
-        public People? GetPeopleAsync()
+        public PeopleXml? GetPeopleAsync()
         {
-            var people = new People();
+            var people = new PeopleXml();
 
             using(var reader = new StreamReader(path))
             {
-                var x = new XmlSerializer(typeof(People));
-                people = x.Deserialize(reader) as People;
+                var x = new XmlSerializer(typeof(PeopleXml));
+                people = x.Deserialize(reader) as PeopleXml;
             }
 
             return people;
         }
 
-        public void SetPeopleAsync(People people)
+        public void SetPeopleAsync(PeopleXml people)
         {
             using (var writer = new StreamWriter(path))
             {
-                var x = new XmlSerializer(typeof(People));
+                var x = new XmlSerializer(typeof(PeopleXml));
                 x.Serialize(writer, people);
             }
                 

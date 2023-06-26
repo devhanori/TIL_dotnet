@@ -8,6 +8,7 @@ using System.Reflection;
 using CSharpWpf.Core.Messages;
 using CSharpWpf.Core.LocalWorks.Main;
 using CSharpWpf.Core.Services;
+using CSharpWpf.Core.Models;
 
 namespace CSharpWpf.Core.ViewModels.Main
 {
@@ -17,10 +18,10 @@ namespace CSharpWpf.Core.ViewModels.Main
         private System.Threading.Timer? DateTimeTimer;
         private WindowCtrl? WinCtrl = new();
         private readonly IEnumerable<IMenuView>? MenuViews;
-        PeopleService peopleService;
+        PeopleXmlService peopleService;
         public MainWindowViewModel(
             IEnumerable<IMenuView> _meunViews,
-            PeopleService _peopleService)
+            PeopleXmlService _peopleService)
         {
             MenuViews = _meunViews.ToList();
             peopleService = _peopleService;
@@ -34,8 +35,8 @@ namespace CSharpWpf.Core.ViewModels.Main
             DateTimeTimer = new System.Threading.Timer(OnDTUpdate, null, 1000, 500);
 
             // 초기 화면 Setting
-            CurrentView = MenuViews?.FirstOrDefault(c => c.Name == "MainStage");
-            currentViewName = "MainStage";
+            CurrentView = MenuViews?.FirstOrDefault(c => c.Name == "CollectionView");
+            currentViewName = "CollectionView";
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             DateTime buildDate = System.IO.File.GetLastWriteTime(assembly.Location);

@@ -4,3 +4,5 @@
 
 /CSharpWpf/.vs/CSharpWpf
 /CSharpWpf/obj
+/CSharpWpf/bin/Debug/net7.0-windows
+/CSharpWpf.Core/obj/Debug/net7.0-windows

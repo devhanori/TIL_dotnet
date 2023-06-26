@@ -3,6 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 using CSharpWpf.Core.Services;
 using CSharpWpf.Core.ViewModels.Main;
+using System.Windows.Data;
+using CSharpWpf.Styles.Units;
+using CSharpWpf.Core.ViewModels.Units;
+using CSharpWpf.Core.Models;
 
 namespace CSharpWpf
 {
@@ -21,7 +25,9 @@ namespace CSharpWpf
             var services = new ServiceCollection();
 
             services.AddSingleton<MainWindowViewModel>();
-            services.AddSingleton<PeopleService>();
+            services.AddSingleton<CollectionViewTestViewModel>();
+            services.AddSingleton<PeopleXmlService>();
+            services.AddSingleton<IMenuView, CollectionViewTestView>();
 
             return services.BuildServiceProvider();
         }

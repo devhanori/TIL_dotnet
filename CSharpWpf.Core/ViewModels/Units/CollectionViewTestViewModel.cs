@@ -11,8 +11,17 @@ namespace CSharpWpf.Core.ViewModels.Units
 {
     public partial class CollectionViewTestViewModel : ObservableObject
     {
+        private readonly PeopleXmlService peopleService;
+        public CollectionViewTestViewModel(
+            PeopleXmlService _peopleService) 
+        {
+            peopleService = _peopleService;
+            People = new ObservableCollection<Person>(peopleService.people.peoples);
+        }
+
         [ObservableProperty]
         public ObservableCollection<Person> people;
+
 
     }
 }

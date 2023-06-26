@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CSharpWpf.Core.Services;
+using CSharpWpf.Core.ViewModels.Units;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +20,12 @@ namespace CSharpWpf.Styles.Units
     /// <summary>
     /// CollectionViewTestView.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class CollectionViewTestView : UserControl
+    public partial class CollectionViewTestView : UserControl, IMenuView
     {
         public CollectionViewTestView()
         {
             InitializeComponent();
+            DataContext = App.Current.Services.GetService(typeof(CollectionViewTestViewModel));
         }
     }
 }
