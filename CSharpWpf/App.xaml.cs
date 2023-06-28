@@ -28,6 +28,7 @@ namespace CSharpWpf
             services.AddSingleton<CollectionViewTestViewModel>();
             services.AddSingleton<PeopleXmlService>();
             services.AddSingleton<IMenuView, CollectionViewTestView>();
+            services.AddSingleton<IXmlSettingService, XmlSettingService>();
 
             return services.BuildServiceProvider();
         }

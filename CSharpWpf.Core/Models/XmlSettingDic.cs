@@ -11,12 +11,20 @@ namespace CSharpWpf.Core.Models
     [XmlRoot]
     public class XmlSettingDic
     {
+        public XmlSettingDic()
+        {
+        }
+
         [XmlIgnore]
         public string path = "Config\\Setting.xml";
 
         [XmlElement]
-        public Dictionary<string, object> SettingsStorage;
-        public XmlSettingDic() { }
+        public Dictionary<string, object>? SettingsStorage { get; set; } = new Dictionary<string, object> {
+            { "a",1 },
+            { "b","ss" },
+            { "C",1.0 },
+
+        };
         public XmlSettingDic? Get()
         {
             var xmlsetting = new XmlSettingDic();
@@ -38,6 +46,5 @@ namespace CSharpWpf.Core.Models
                 x.Serialize(writer, xmlsetting);
             }
         }
-
     }
 }
